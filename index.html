@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Khattabi</title>
-<meta name="description" content="khattabi.ly">
+<title>الخطابي</title>
+<meta name="description" content="الخطابي · khattabi.ly">
 <meta name="theme-color" content="#1b130b">
 <link rel="preload" as="image" href="img/sabratha-2560.jpg"
       imagesrcset="img/sabratha-1280.jpg 1280w, img/sabratha-2560.jpg 2560w, img/sabratha-3840.jpg 3840w" imagesizes="100vw">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { height: 100%; }
   body {
     background: #1b130b;
     color: #fff;
-    font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+    font-family: "Amiri", "Times New Roman", serif;
     overflow: hidden;
   }
   .hero { position: fixed; inset: 0; }
@@ -37,32 +37,29 @@
     position: fixed; left: 0; right: 0; top: 7vh; text-align: center; padding: 0 16px;
   }
   h1 {
-    font-weight: 300; font-size: clamp(2.4rem, 7vw, 5.5rem);
-    letter-spacing: .18em; margin-right: -.18em; line-height: 1;
+    font-weight: 400; font-size: clamp(2.8rem, 8vw, 6.5rem);
+    line-height: 1.3;
     text-shadow: 0 2px 24px rgba(0,0,0,.45);
   }
   .place {
-    margin-top: .8rem; font-weight: 400; font-size: clamp(.95rem, 1.8vw, 1.25rem);
-    letter-spacing: .35em; margin-right: -.35em; text-transform: uppercase;
+    margin-top: .3rem; font-weight: 400; font-size: clamp(1.15rem, 2.2vw, 1.6rem);
     text-shadow: 0 1px 12px rgba(0,0,0,.6);
   }
   .credit {
-    position: fixed; right: 16px; bottom: 12px; left: 16px; text-align: right;
+    position: fixed; right: 16px; bottom: 12px; left: 16px; text-align: left;
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 11px;
     color: rgba(255,255,255,.75); text-shadow: 0 1px 4px rgba(0,0,0,.7);
   }
   .credit a { color: inherit; }
 
-  /* Landscape screens: little sky in frame, so set the title in the shaded lower-left corner */
+  /* Landscape screens: little sky in frame, so set the title in the shaded lower-right corner (RTL) */
   @media (min-aspect-ratio: 1/1) {
     .shade {
       background:
         linear-gradient(to top, rgba(0,0,0,.7) 0%, rgba(0,0,0,.25) 28%, rgba(0,0,0,0) 45%),
-        linear-gradient(to right, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 45%);
+        linear-gradient(to left, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 45%);
     }
-    .title { top: auto; bottom: 6vh; left: 5vw; right: auto; text-align: left; padding: 0; }
-    h1 { margin-right: 0; }
-    .place { margin-right: 0; }
+    .title { top: auto; bottom: 6vh; right: 5vw; left: auto; text-align: right; padding: 0; }
   }
 </style>
 </head>
@@ -71,19 +68,19 @@
   <img src="img/sabratha-2560.jpg"
        srcset="img/sabratha-1280.jpg 1280w, img/sabratha-2560.jpg 2560w, img/sabratha-3840.jpg 3840w"
        sizes="100vw"
-       alt="The three-storey columned stage wall of the Roman theatre at Sabratha, Libya, under a blue sky">
+       alt="الواجهة المسرحية ذات الطوابق الثلاثة والأعمدة في المسرح الروماني بصبراتة، ليبيا، تحت سماء زرقاء">
 </div>
 <div class="shade" aria-hidden="true"></div>
 
 <header class="title">
-  <h1>khattabi</h1>
-  <p class="place">Sabratha · Libya</p>
+  <h1>الخطابي</h1>
+  <p class="place">صبراتة · ليبيا</p>
 </header>
 
 <p class="credit">
-  Roman theatre, Sabratha. Photo:
-  <a href="https://commons.wikimedia.org/wiki/File:Sabratha_-_B%C3%BChnenhaus_des_Theaters_2._Jh..jpg" target="_blank" rel="noopener">Franzfoto</a>,
-  <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>
+  المسرح الروماني، صبراتة. تصوير:
+  <a href="https://commons.wikimedia.org/wiki/File:Sabratha_-_B%C3%BChnenhaus_des_Theaters_2._Jh..jpg" target="_blank" rel="noopener" dir="ltr">Franzfoto</a>،
+  <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener" dir="ltr">CC BY-SA 3.0</a>
 </p>
 </body>
 </html>
